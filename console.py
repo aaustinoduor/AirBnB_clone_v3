@@ -149,7 +149,7 @@ class HBNBCommand(cmd.Cmd):
                                         args[3] = 0.0
                             setattr(models.storage.all()[k], args[2], args[3])
                             models.storage.all()[k].save()
-                       else:
+                        else:
                             print("** value missing **")
                     else:
                         print("** attribute name missing **")
